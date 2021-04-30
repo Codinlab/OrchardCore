@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- NuGet properties-->
+    <Title>Target for Modular OrchardCore SAAS Application with admin features</Title>
+    <Description>
+      $(OCFrameworkDescription)
+
+      Converts the application into a modular SAAS application with admin features but without any theme or recipe.</Description>
+    <PackageTags>$(PackageTags) OrchardCoreFramework MVC SAAS</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <!--
+    When a package is not directly referenced, e.g only through the reference of this bundle package,
+    the files in its build folder are not evaluated on building if this folder is marked as private.
+    This can be defined by using the 'PrivateAssets' attribute.
+
+    Here, only project references are used but when packing the bundle they become package references,
+    and with the same 'PrivateAssets' attribute.
+  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrchardCore.Application.Mvc.Targets\OrchardCore.Application.Mvc.Targets.csproj" PrivateAssets="none" />
+    
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Admin\OrchardCore.Admin.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Diagnostics\OrchardCore.Diagnostics.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.DynamicCache\OrchardCore.DynamicCache.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Features\OrchardCore.Features.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.HomeRoute\OrchardCore.HomeRoute.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Navigation\OrchardCore.Navigation.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Recipes\OrchardCore.Recipes.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Resources\OrchardCore.Resources.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Roles\OrchardCore.Roles.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Settings\OrchardCore.Settings.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Themes\OrchardCore.Themes.csproj" PrivateAssets="none" />
+    <ProjectReference Include="..\..\OrchardCore.Modules\OrchardCore.Users\OrchardCore.Users.csproj" PrivateAssets="none" />
+    
+    <ProjectReference Include="..\OrchardCore.Infrastructure\OrchardCore.Infrastructure.csproj" PrivateAssets="none" />
+  </ItemGroup>
+
+</Project>

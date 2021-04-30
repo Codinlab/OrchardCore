@@ -402,6 +402,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Data.YesSql", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Data.YesSql.Abstractions", "src\OrchardCore\OrchardCore.Data.YesSql.Abstractions\OrchardCore.Data.YesSql.Abstractions.csproj", "{AB47A65C-7BA9-4CE7-BA73-285EB7A2CEFD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrchardCore.Saas", "OrchardCore.Saas", "{01FCC934-5D4D-4074-A3AC-DF53920032C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Saas.Web", "src\OrchardCore.Saas.Web\OrchardCore.Saas.Web.csproj", "{A59F6F5C-941D-4FD5-BA96-5A8C503B464D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Application.Saas.Targets", "src\OrchardCore\OrchardCore.Application.Saas.Targets\OrchardCore.Application.Saas.Targets.csproj", "{4891E259-E8FC-465F-9DF4-03DB7D14767A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrchardCore.Application.Saas.Core.Targets", "src\OrchardCore\OrchardCore.Application.Saas.Core.Targets\OrchardCore.Application.Saas.Core.Targets.csproj", "{D0985079-ECDA-459E-B517-AE93EFEB84BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1096,6 +1104,18 @@ Global
 		{AB47A65C-7BA9-4CE7-BA73-285EB7A2CEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB47A65C-7BA9-4CE7-BA73-285EB7A2CEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB47A65C-7BA9-4CE7-BA73-285EB7A2CEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59F6F5C-941D-4FD5-BA96-5A8C503B464D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59F6F5C-941D-4FD5-BA96-5A8C503B464D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59F6F5C-941D-4FD5-BA96-5A8C503B464D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59F6F5C-941D-4FD5-BA96-5A8C503B464D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4891E259-E8FC-465F-9DF4-03DB7D14767A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4891E259-E8FC-465F-9DF4-03DB7D14767A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4891E259-E8FC-465F-9DF4-03DB7D14767A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4891E259-E8FC-465F-9DF4-03DB7D14767A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0985079-ECDA-459E-B517-AE93EFEB84BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0985079-ECDA-459E-B517-AE93EFEB84BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0985079-ECDA-459E-B517-AE93EFEB84BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0985079-ECDA-459E-B517-AE93EFEB84BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1287,6 +1307,10 @@ Global
 		{1E76C17C-099A-4E6D-BC26-E93CBA4D0BD6} = {A066395F-6F73-45DC-B5A6-B4E306110DCE}
 		{F06E4E20-3675-4BA5-AD2D-4538FAB154D5} = {F23AC6C2-DE44-4699-999D-3C478EF3D691}
 		{AB47A65C-7BA9-4CE7-BA73-285EB7A2CEFD} = {F23AC6C2-DE44-4699-999D-3C478EF3D691}
+		{01FCC934-5D4D-4074-A3AC-DF53920032C2} = {B34E0A0F-C979-4612-B740-74F5D2DA36AF}
+		{A59F6F5C-941D-4FD5-BA96-5A8C503B464D} = {01FCC934-5D4D-4074-A3AC-DF53920032C2}
+		{4891E259-E8FC-465F-9DF4-03DB7D14767A} = {3398AB60-2DB7-464C-B211-C4120BE75582}
+		{D0985079-ECDA-459E-B517-AE93EFEB84BC} = {3398AB60-2DB7-464C-B211-C4120BE75582}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {46A1D25A-78D1-4476-9CBF-25B75E296341}
